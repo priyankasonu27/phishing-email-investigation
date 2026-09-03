@@ -1,0 +1,37 @@
+# Case 02 – Sender Analysis
+
+From: [security@micros0ft-account.test](mailto:security@micros0ft-account.test)
+Reply-To: [verify-account@account-security.test](mailto:verify-account@account-security.test)
+Return-Path: [security@micros0ft-account.test](mailto:security@micros0ft-account.test)
+
+Observation:
+The From and Reply-To addresses use different domains. The sender domain also uses "micros0ft" instead of "microsoft", which is a suspicious look-alike domain commonly associated with impersonation attempts.
+
+Initial Assessment:
+The sender information is suspicious and is a potential phishing indicator.
+
+*Email Authentication Analysis*
+
+SPF: FAIL
+The sending IP 203.0.113.42 did not pass SPF authentication for the sender domain.
+
+DKIM: NONE
+No DKIM signature was present in the email.
+
+DMARC: FAIL
+The email failed DMARC authentication, with the domain policy showing p=reject.
+
+Assessment:
+The authentication results are strong indicators that the email is suspicious and should be investigated further.
+
+Source IP Investigation
+
+Source IP: 203.0.113.42
+
+The IP address was identified from the Received email header.
+
+Observation:
+The email was received from a host identified as 203.0.113.42. This IP will be documented as an indicator from the email header. Since this is a synthetic lab IP address, no real-world malicious reputation is being assumed.
+
+Status:
+Further investigation required.

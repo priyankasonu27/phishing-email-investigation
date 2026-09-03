@@ -1,0 +1,51 @@
+Case 02 – Microsoft 365 Credential Phishing
+IOC (Indicators of Compromise)
+
+1. Sender Email
+security@micros0ft-account.test
+
+2. Sender Domain
+micros0ft-account.test
+
+3. Reply-To Email
+verify-account@account-security.test
+
+4. Reply-To Domain
+account-security.test
+
+5. Source IP Address
+203.0.113.42
+
+6. Suspicious URL
+https://login-microsoft365.account-security.test/verify
+
+7. Suspicious Domain
+login-microsoft365.account-security.test
+
+8. Message-ID
+<m365-20260903-091422@micros0ft-account.test>
+
+9. Subject
+Your Microsoft 365 password will expire today
+
+10. Look-alike Domain Indicator
+micros0ft-account.test
+("0" used instead of "o" in Microsoft)
+
+11. Authentication Indicators
+SPF: FAIL
+DKIM: NONE
+DMARC: FAIL
+DMARC Policy: p=reject
+
+Assessment:
+The above indicators were extracted from the synthetic phishing email
+used in this lab. The email contains multiple phishing indicators,
+including a look-alike sender domain, mismatched Reply-To domain,
+failed email authentication, urgency-based messaging, and a suspicious
+account verification URL.
+
+Note:
+This is a controlled cybersecurity training artifact using .test
+domains and a documentation/test IP address. No real malicious activity
+is being attributed to these indicators.

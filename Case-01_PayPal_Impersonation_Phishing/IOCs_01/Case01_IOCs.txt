@@ -1,0 +1,25 @@
+CASE 01 – INDICATORS OF COMPROMISE (IOCs)
+
+1. Sender Email
+no-reply@paypa1-support.test
+
+2. Return-Path
+billing@secure-paypa1-support.test
+
+3. Reply-To
+recover@account-verify-center.test
+
+4. Source IP
+198.51.100.42
+
+5. Suspicious URL
+http://account-verify-center.test/login?id=8842&ref=ppl
+
+6. IP-Based URL
+http://198.51.100.42/verify
+
+7. Attachment
+account_statement.txt
+
+8. Subject
+[Action Required] Your account has been limited

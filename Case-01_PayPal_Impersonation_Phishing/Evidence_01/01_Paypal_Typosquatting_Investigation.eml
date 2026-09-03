@@ -1,0 +1,47 @@
+Return-Path: <billing@secure-paypa1-support.test>
+Delivered-To: dana.ruiz@corp.lab
+Received: from mail.corp.lab (mail.corp.lab [10.0.10.5])
+	by mx.corp.lab with ESMTP id 4Fk2p9
+	for <dana.ruiz@corp.lab>; Wed, 01 May 2024 04:22:10 +0000 (UTC)
+Received: from unknown (HELO secure-paypa1-support.test) (198.51.100.42)
+	by mail.corp.lab with SMTP; Wed, 01 May 2024 04:22:08 +0000
+Authentication-Results: mx.corp.lab;
+	SPF=fail (sender IP is 198.51.100.42) smtp.mailfrom=secure-paypa1-support.test;
+	DKIM=none;
+	DMARC=fail (p=reject) header.from=paypa1-support.test
+From: "PayPal Security" <no-reply@paypa1-support.test>
+Reply-To: <recover@account-verify-center.test>
+To: <dana.ruiz@corp.lab>
+Subject: [Action Required] Your account has been limited
+Date: Wed, 01 May 2024 04:22:07 +0000
+Message-ID: <9f2c1a44-0001@paypa1-support.test>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=_boundary_9f2c1a44"
+
+--=_boundary_9f2c1a44
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+<html>
+<body>
+<p>Dear Customer,</p>
+<p>We detected unusual activity and have <b>temporarily limited</b> your account.
+You must confirm your identity within 24 hours or your account will be permanently
+suspended.</p>
+<p><a href="http://account-verify-center.test/login?id=8842&amp;ref=ppl">
+Click here to restore your account</a></p>
+<p>If you did not request this, please still verify at
+http://198.51.100.42/verify to secure your account.</p>
+<p>Thank you,<br>The PayPal Security Team</p>
+</body>
+</html>
+
+--=_boundary_9f2c1a44
+Content-Type: text/plain; name="account_statement.txt"
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="account_statement.txt"
+
+VGhpcyBpcyBhIHN5bnRoZXRpYyB0ZXN0IGF0dGFjaG1lbnQgZm9yIHRoZSBwaGlzaGluZy1h
+bmFseXNpcyBsYWIuIEl0IGlzIGhhcm1sZXNzIHBsYWluIHRleHQu
+
+--=_boundary_9f2c1a44--

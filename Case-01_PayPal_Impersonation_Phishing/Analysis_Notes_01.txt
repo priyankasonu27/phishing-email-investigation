@@ -1,0 +1,42 @@
+Case 01 – Sender Analysis
+
+From: [no-reply@paypa1-support.test](mailto:no-reply@paypa1-support.test)
+Reply-To: [recover@account-verify-center.test](mailto:recover@account-verify-center.test)
+Return-Path: [billing@secure-paypa1-support.test](mailto:billing@secure-paypa1-support.test)
+
+Observation:
+The From, Reply-To, and Return-Path addresses use different domains. The sender also uses "paypa1" instead of "paypal", which is a suspicious look-alike domain.
+
+Initial Assessment:
+The sender information is suspicious and is a potential phishing indicator.
+
+
+
+*Email Authentication Analysis*
+
+SPF: FAIL
+The sending IP 198.51.100.42 did not pass SPF authentication for the sender domain.
+
+DKIM: NONE
+No DKIM signature was present in the email.
+
+DMARC: FAIL
+The email failed DMARC authentication, with the domain policy showing p=reject.
+
+Assessment:
+The authentication results are strong indicators that the email is suspicious and should be investigated further.
+
+
+
+Source IP Investigation
+
+Source IP: 198.51.100.42
+
+The IP address was identified from the Received email header.
+
+Observation:
+The email was received from a host identified as 198.51.100.42. This IP will be investigated using threat intelligence sources to determine whether it has any known malicious reputation.
+
+Status:
+Further investigation required.
+
