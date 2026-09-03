@@ -60,28 +60,6 @@ The following workflow was used during the investigations:
 * Microsoft Word
 * Windows
 
-## Project Structure
-
-```text
-phishing-email-investigation/
-│
-├── README.md
-│
-├── Case-01_PayPal_Impersonation_Phishing/
-│   ├── Evidence_01/
-│   ├── Report_01/
-│   ├── IOCs_01/
-│   ├── Analysis_Notes_01.txt
-│   └── screenshots_01/
-│
-└── Case-02_Microsoft365_Credential_Phishing/
-    ├── Evidence_02/
-    ├── Report_02/
-    ├── IOCs_02/
-    ├── Analysis_notes_Case-02.txt
-    └── Screenshots_02/
-```
-
 ## Key Findings
 
 Both simulated phishing cases contained multiple indicators associated with phishing activity, including look-alike domains, mismatched sender information, failed email authentication, suspicious URLs, and social-engineering techniques.
